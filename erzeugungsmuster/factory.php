@@ -1,104 +1,79 @@
 <?php
-/**
- * Beschreibung
- *
- *
- * 
- * 
- * @author Stephan.Krauss
- * @since 18.06.13 08:38
- */
 
-interface dbObject_interface {
+class ABC
+{
+    protected $wertA = null;
 
-	public function dbSetStatement($strSQLStatement);
-	public function dbFetchArray();
-	public function dbFetchObject();
-	public function dbFetchRow();
-
-}
-
-class dbObject_mysql implements dbObject_interface {
-
-	public function dbSetStatement($strSQLStatement) {
-		// code
-	}
-
-	public function dbFetchArray() {
-		// code
-	}
-
-	public function dbFetchObject() {
-		// code
-	}
-	public function dbFetchRow() {
-		// code
-	}
-}
-
-class dbObject_postgresql implements dbObject_interface {
-
-    public function dbSetStatement($strSQLStatement) {
-		// code
+    public function getWertA()
+    {
+        return $this->wertA;
     }
 
-    public function dbFetchArray() {
-		// code
-	}
-
-    public function dbFetchObject() {
-		// code
-	}
-
-    public function dbFetchRow() {
-		// code
-	}
+    public function setWertA($wertA)
+    {
+        $this->wertA = $wertA;
+    }
 }
 
-// ********************************************
-
-abstract class factoryDbObject
+class DEF
 {
+    protected $wertA = null;
 
+    public function getWertA()
+    {
+        return $this->wertA;
+    }
+
+    public function setWertA($wertA)
+    {
+        $this->wertA = $wertA;
+    }
+}
+
+//*******************************
+
+abstract class factoryAbstract
+{
     protected $className = null;
+    protected $wertA = null;
 
     public function __construct($className)
     {
         $this->className = $className;
     }
 
-    abstract public function generateObj();
+    abstract public function erzeugeObj();
 
-    abstract public function getRow();
+    abstract public function setWertA($wertA);
+
 }
 
-class superDbObjects extends factoryDbObject
+class factory extends factoryAbstract
 {
-    public function generateObj()
+    public function erzeugeObj()
     {
-        $obj = new $this->className();
+        $newObj = new $this->className();
+        $newObj->setWertA($this->wertA);
 
-        return $obj;
+        return $newObj;
     }
 
-    public function getRow()
+    public function setWertA($wertA)
     {
-        $row = array(
-            'name' => 'mustermann',
-            'vorname' => 'max'
-        );
-
-        return $row;
+        $this->wertA = $wertA;
     }
-
 }
 
-// **************************************************
+//******************************
 
-$mysqlObj = new superDbObjects('dbObject_mysql');
-$row = $mysqlObj->getRow();
+$myObj = new factory('ABC');
+$myObj->setWertA(55);
+$ABC = $myObj->erzeugeObj();
+$wertA = $ABC->getWertA();
 
-var_dump($row);
+$myObj = new factory('DEF');
+$myObj->setWertA(66);
+$DEF = $myObj->erzeugeObj();
+$wertA = $DEF->getWertA();
 
-
-
+$test = 123;
