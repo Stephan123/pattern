@@ -75,5 +75,3 @@ $myObj = new factory('DEF');
 $myObj->setWertA(66);
 $DEF = $myObj->erzeugeObj();
 $wertA = $DEF->getWertA();
-
-$test = 123;

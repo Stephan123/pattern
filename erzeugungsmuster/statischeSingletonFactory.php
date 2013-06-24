@@ -2,6 +2,17 @@
 
 class AAA
 {
+    private static $instance = null;
+
+    public static function getInstance()
+    {
+        if(!self::$instance){
+            self::$instance = new AAA();
+        }
+
+        return self::$instance;
+    }
+
     public function foo()
     {
         echo 'foo';
@@ -10,6 +21,17 @@ class AAA
 
 class BBB
 {
+    private static $instance = null;
+
+    public static function getInstance()
+    {
+        if(!self::$instance){
+            self::$instance = new AAA();
+        }
+
+        return self::$instance;
+    }
+
     public function foo()
     {
         echo 'foo';
@@ -18,6 +40,17 @@ class BBB
 
 class CCC
 {
+    private static $instance = null;
+
+    public static function getInstance()
+    {
+        if(!self::$instance){
+            self::$instance = new AAA();
+        }
+
+        return self::$instance;
+    }
+
     public function foo()
     {
         echo 'foo';
