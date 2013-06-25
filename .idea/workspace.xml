@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aad31015-4d77-43e9-8e5b-36cef66dd024" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/erzeugungsmuster/prototype.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erzeugungsmuster/factory.php" afterPath="$PROJECT_DIR$/erzeugungsmuster/factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pattern.iml" afterPath="$PROJECT_DIR$/.idea/pattern.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erzeugungsmuster/statischeFactory.php" afterPath="$PROJECT_DIR$/erzeugungsmuster/statischeFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erzeugungsmuster/statischeSingletonFactory.php" afterPath="$PROJECT_DIR$/erzeugungsmuster/statischeSingletonFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strukturmuster/composite.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pattern.iws" />
@@ -15,13 +11,14 @@
     <file path="/index.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371021899965" ignored="false" />
     <file path="/observerPattern.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371451208128" ignored="false" />
     <file path="/observer.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371451232081" ignored="false" />
-    <file path="/Dummy.txt" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1372055140215" ignored="false" />
+    <file path="/Dummy.txt" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1372141461068" ignored="false" />
     <file path="/factory.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371540474189" ignored="false" />
     <file path="/test.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371620647630" ignored="false" />
     <file path="/a.dummy" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1372058329087" ignored="false" />
     <file path="/statischeFactory.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371798511222" ignored="false" />
     <file path="/statischeSingletonFactory.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371798790688" ignored="false" />
     <file path="/prototype.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1372058694034" ignored="false" />
+    <file path="/composite.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1372145191169" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +38,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="prototype.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/erzeugungsmuster/prototype.php">
+      <file leaf-file-name="composite.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/strukturmuster/composite.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="42" selection-start="1895" selection-end="1895" vertical-scroll-proportion="2.7342658">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,6 +62,9 @@
       <MyDateState />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/strukturmuster/composite.php" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -81,6 +81,7 @@
         <option value="$PROJECT_DIR$/erzeugungsmuster/statischeSingletonFactory.php" />
         <option value="$PROJECT_DIR$/erzeugungsmuster/examples/prototype.php" />
         <option value="$PROJECT_DIR$/erzeugungsmuster/prototype.php" />
+        <option value="$PROJECT_DIR$/strukturmuster/composite.php" />
       </list>
     </option>
   </component>
@@ -165,10 +166,6 @@
               <option name="myItemId" value="pattern" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="verhaltensmuster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -180,25 +177,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="erzeugungsmuster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pattern" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erzeugungsmuster" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
+              <option name="myItemId" value="strukturmuster" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,8 +190,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="pattern" serverId="5eef5171-d211-4ca2-9797-5dbcdae535cd">
     <servers>
@@ -313,14 +292,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1688" y="-8" width="1696" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16034272" sideWeight="0.67096776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621787" sideWeight="0.67096776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39783785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -404,13 +383,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/verhaltensmuster/observerPattern.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/verhaltensmuster/observer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" />
@@ -467,35 +439,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/erzeugungsmuster/statischeFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="76" selection-end="76" vertical-scroll-proportion="0.02972028">
-          <folding />
-        </state>
+        <state line="7" column="5" selection-start="76" selection-end="76" vertical-scroll-proportion="0.02972028" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erzeugungsmuster/statischeSingletonFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="9" selection-start="574" selection-end="574" vertical-scroll-proportion="0.02972028">
-          <folding />
-        </state>
+        <state line="40" column="9" selection-start="574" selection-end="574" vertical-scroll-proportion="0.02972028" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erzeugungsmuster/factory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="77" column="0" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erzeugungsmuster/factoryAbstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erzeugungsmuster/prototype.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="42" selection-start="1895" selection-end="1895" vertical-scroll-proportion="2.7342658">
+        <state line="92" column="42" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.62762237">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strukturmuster/composite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
