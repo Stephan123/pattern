@@ -1,64 +1,33 @@
 <?php
 
-
-class torte{
-
-    private $kerzen = true;
-    private $zuckerguss = true;
-
-    /**
-     * @return boolean
-     */
-    public function getKerzen()
-    {
-        return $this->kerzen;
-    }
-
-    /**
-     * @return boolean
-     */
-    public function getZuckerguss()
-    {
-        return $this->zuckerguss;
-    }
-}
-
-
-class Konditor
+interface iCollecton extends Iterator, Countable
 {
-    protected $kerzen;
-    protected $zuckerguss;
-    protected $torte;
-
-    public function __constructor(torte $torte)
-    {
-        $this->torte = $torte;
-        $this->resetKerzen();
-        $this->resetZuckerguss();
-    }
-
-    private function resetKerzen()
-    {
-        $this->kerzen = $this->torte->getKerzen();
-    }
-
-    private function resetZuckerguss()
-    {
-        $this->zuckerguss = $this->torte->getZuckerguss();
-    }
+    public function add( $element );
+    public function remove ( $element );
 }
 
-class torteSuper extends Konditor
+class TypeSaveCollectionDecorator implements iCollection
 {
-    private $konditor;
+    private $collection;
+    private $type;
 
-    public function __construct(Konditor $konditor)
+    public function __construct( iCollection $collection, $type )
     {
-        $this->konditor = $konditor;
+        $this->collcetion = $collection;
+        $this->type = $type;
     }
 
-    function setZusatzbelag() {
-        $this->$konditor->title = "!" . $this->btd->title . "!";
+    public function add( $element )
+    {
+        if ( ! ( $element instanceof $this->type ) ) {
+            throw new Exception( 'Wrong type' );
+        }
+
+        return $this->collection->add( $element );
+    }
+
+    public function remove( $element )
+    {
+        return $this->collection->remove( $element );
     }
 }
-

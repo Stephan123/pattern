@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aad31015-4d77-43e9-8e5b-36cef66dd024" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/strukturmuster/decorationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strukturmuster/decorationTest.php" afterPath="$PROJECT_DIR$/strukturmuster/decorationTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pattern.iws" />
@@ -11,7 +11,7 @@
     <file path="/index.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371021899965" ignored="false" />
     <file path="/observerPattern.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371451208128" ignored="false" />
     <file path="/observer.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371451232081" ignored="false" />
-    <file path="/Dummy.txt" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1372402075104" ignored="false" />
+    <file path="/Dummy.txt" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1372422677685" ignored="false" />
     <file path="/factory.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371540474189" ignored="false" />
     <file path="/test.php" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1371620647630" ignored="false" />
     <file path="/a.dummy" changelist="aad31015-4d77-43e9-8e5b-36cef66dd024" time="1372058329087" ignored="false" />
@@ -39,19 +39,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="decoration.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="decoration.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/strukturmuster/decoration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="5" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.79195803">
+            <state line="77" column="31" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decorationTest.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="decorationTest.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/strukturmuster/decorationTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="31" selection-start="1000" selection-end="1005" vertical-scroll-proportion="-15.461538">
+            <state line="30" column="53" selection-start="705" selection-end="705" vertical-scroll-proportion="0.5808656">
               <folding />
             </state>
           </provider>
@@ -311,22 +311,26 @@
       <created>1372319550531</created>
       <updated>1372319550531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Decoration Pattern erster Test, Schaffung neuer Eigenschaften in der Dekorierer Klasse ist unklar.">
+      <created>1372406490604</created>
+      <updated>1372406490604</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1688" y="-8" width="1696" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16768666" sideWeight="0.67096776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17135863" sideWeight="0.67167383" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39783785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32832617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -381,7 +385,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="decoration pattern , aufbereitet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Decoration Pattern erster Test, Schaffung neuer Eigenschaften in der Dekorierer Klasse ist unklar." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -397,6 +401,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="decoration pattern" />
     <MESSAGE value="decoration pattern , aufbereitet" />
+    <MESSAGE value="Decoration Pattern erster Test, Schaffung neuer Eigenschaften in der Dekorierer Klasse ist unklar." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -482,16 +487,16 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/strukturmuster/decorationTest.php">
+    <entry file="file://$PROJECT_DIR$/strukturmuster/decoration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="31" selection-start="1000" selection-end="1005" vertical-scroll-proportion="-15.461538">
+        <state line="77" column="31" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/strukturmuster/decoration.php">
+    <entry file="file://$PROJECT_DIR$/strukturmuster/decorationTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="5" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.79195803">
+        <state line="30" column="53" selection-start="705" selection-end="705" vertical-scroll-proportion="0.5808656">
           <folding />
         </state>
       </provider>
