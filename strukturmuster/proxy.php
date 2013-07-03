@@ -1,5 +1,16 @@
 <?php
-header("Content-Type: text/html; charset=utf-8");
+/**
+ * Proxy / stellvertreter Pattern
+ *
+ * + Interface
+ * + konkrete Klasse
+ * + Proxy der konkreten Klasse
+ * + Erweiterung des proxy mit Schutzmechanismen
+ *
+ * @author Stephan.Krauss
+ * @date 03.54.2013
+ * @file proxy.php
+ */
 
 //***** Interface ****
 interface bankI
