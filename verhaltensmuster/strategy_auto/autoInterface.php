@@ -3,14 +3,10 @@
  * Beschreibung des Interface
  *
  * @author Stephan.Krauss
- * @date 06.09.13
- * @file geraete.php
+ * @date 09.09.13
+ * @file autoInterface.php
  * @package front | admin
  * @subpackage interface
  */
  
-interface geraete {
 
-    public function temperaturAenderung($aktuelleTemperatur);
-
-}

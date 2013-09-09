@@ -1,19 +1,41 @@
 <?php 
- /**
- * Beschreibung der Klasse
- *
- * + Ausführliche Beschreibung der Klasse
- * + Ausführliche Beschreibung der Klasse
- * + Ausführliche Beschreibung der Klasse
- * 
- * @author Stephan.Krauss
- * @date 06.09.13
- * @file heizung.php
- * @package front | admin | tools | plugins | schnittstelle | tabelle
- * @subpackage controller | model | interface | shadow | data
- */
+include_once('geraete.php');
  
-class heizung
+class heizung implements geraete
 {
+    private $aktuelleTemperatur = null;
+
+    private $conditionHeizungAn = -10;
+    private $conditionHeizungAus = 20;
+
+    private $flagHeizungAn = false;
+
+    public function temperaturAenderung($aktuelleTemperatur)
+    {
+        $aktuelleTemperatur = (int) $aktuelleTemperatur;
+        $this->aktuelleTemperatur = $aktuelleTemperatur;
+
+        $this->kontrolleTemperatur();
+        $this->kontrolleHeizung();
+
+        return;
+    }
+
+    private function kontrolleTemperatur()
+    {
+        if($this->aktuelleTemperatur < $this->conditionHeizungAn)
+            $this->flagHeizungAn = true;
+
+        if($this->aktuelleTemperatur > $this->conditionHeizungAus)
+            $this->flagHeizungAn = false;
+    }
+
+    private function kontrolleHeizung()
+    {
+        if($this->flagHeizungAn)
+            echo "Heizung an <br>";
+        else
+            echo "Heizung aus <br>";
+    }
 
 }
