@@ -4,11 +4,11 @@ include_once('ProductBuilder.php');
 $configArray = array(
     'type' => 'auto',
     'size' => 'max',
-    'colour' => 'red'
+    'colour' => 'red',
+    'produktName' => 'produkt1'
 );
 
 $builder = new ProductBuilder($configArray);
-$builder->build();
-$produkt = $builder->getProduct();
+$produkt = $builder->getProdukt();
 
-// $test = 123;
+$test = 123;

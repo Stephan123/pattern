@@ -9,26 +9,61 @@
 class Product
 {
     /**
+     * Pflichtparameter
+     *
      * @var string
      */
     protected $type = '';
 
     /**
+     * optionaler Parameter
+     *
      * @var string
      */
     protected $size = '';
 
     /**
+     * optionaler Parameter
+     *
      * @var string
      */
     protected $colour = '';
 
+    // Flags
+
+    // möglicher Pflichtzustand der Farbe / Colours
+    protected $colourCheck = array(
+        'red',
+        'blue',
+        'green',
+        'yellow'
+    );
+
     /**
+     * Kontrolle der Abhängigkeiten des Produktes
+     *
+     */
+    public function checkDependencies()
+    {
+        if($this->size != 'max' or $this->colour != 'red')
+            throw new Exception();
+
+        return;
+    }
+
+    /**
+     * setzen Pflichtparameter und Kontrolle des Parameter
+     *
      * @param string $colour
      */
     public function setColour($colour)
     {
+        if(!in_array($colour, $this->colourCheck))
+            throw new Exception();
+
         $this->colour = $colour;
+
+        return;
     }
 
     /**
@@ -37,6 +72,8 @@ class Product
     public function setSize($size)
     {
         $this->size = $size;
+
+        return;
     }
 
     /**
@@ -45,5 +82,9 @@ class Product
     public function setType($type)
     {
         $this->type = $type;
+
+        return;
     }
+
+    // Methoden des Produktes ...
 }
